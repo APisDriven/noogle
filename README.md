@@ -1,7 +1,5 @@
 # noogle
 
-Include these in your proposal (can include other things as well):
-
 Project title - Noogle
 Project description - A search engine for class content 
 
