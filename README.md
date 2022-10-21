@@ -13,4 +13,6 @@ Wireframe or sketch of the design
 APIs to be used:
 Google & YouTube
 
-Rough breakdown of tasks
+<h2>Rough breakdown of tasks:</h2>
+Wire framing
+
