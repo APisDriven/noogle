@@ -14,5 +14,6 @@ APIs to be used:
 Google & YouTube
 
 <h2>Rough breakdown of tasks:</h2>
-Wire framing
+Wire framing - John
+Kanban Board - Keonte
 
