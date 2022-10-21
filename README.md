@@ -1,19 +1,21 @@
 # noogle
 
-Project title - Noogle
-Project description - A search engine for class content 
+<h1>Project title - Noogle</h1>
+<h3>Project description</h3>
+A search engine for class content 
 
-Simple User story:
+<h3>Simple User story:<h3>
 As a coding student 
 I want to search for class topics
 so that I can quickly find the most relevant information 
 
 Wireframe or sketch of the design
 
-APIs to be used:
+<h3>APIs to be used:</h3>
 Google & YouTube
 
-<h2>Rough breakdown of tasks:</h2>
+<h3>Rough breakdown of tasks:</h3>
 Wire framing - John
+<br>
 Kanban Board - Keonte
 
