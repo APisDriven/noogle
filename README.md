@@ -15,7 +15,15 @@ Wireframe or sketch of the design
 Google & YouTube
 
 <h3>Rough breakdown of tasks:</h3>
-Wire framing - John
+John - Wire Framing & YouTube API
 <br>
-Kanban Board - Keonte
-
+Keonte - Kanban Board & Test Product
+<br>
+Aaron: HTML Layout & Page Linking & Google API & Elevator Pitch
+<br>
+Noah - Javascript 
+<br>
+Steve - CSS Styling
+<br>
+  <h2>Notes</h2>
+  LocalStorage  - Recent Searches
