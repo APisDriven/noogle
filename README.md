@@ -14,3 +14,11 @@ APIs to be used:
 Live Sports Odds, NBA API, and Bootstrap 5
 
 Rough breakdown of tasks
+John - Wire Framing & YouTube API
+Keonte - Kanban Board & Test Product
+Aaron: HTML Layout & Page Linking & Google API & Elevator Pitch
+Noah - Javascript
+Steve - CSS Styling
+
+Notes
+LocalStorage - Recent Searches
