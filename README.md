@@ -1,16 +1,16 @@
 # noogle
 
-Project title - Noogle
-Project description - A search engine for class content 
+Project title - Noogle: NBA Tracker
+Project description - A website designed to track scores and betting odds of your favorite team!
 
 Simple User story:
-As a coding student 
-I want to search for class topics
-so that I can quickly find the most relevant information 
+As a fan of the NBA
+I want to have all scores and betting odds in one place
+so that I can quickly find information that I want to see
 
-Wireframe or sketch of the design
+Wireframe or sketch of the design:
 
 APIs to be used:
-Google & YouTube
+Live Sports Odds, NBA API, and Bootstrap 5
 
 Rough breakdown of tasks
