@@ -8,6 +8,8 @@
   }
   
   * {
+      
+    background-color: gray;
     margin: 0;
     padding: 0;
   }
@@ -83,4 +85,4 @@
     .split {
         display: flex;
         gap: 2em;
-    }
+    }}
