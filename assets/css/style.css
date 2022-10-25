@@ -1,0 +1,86 @@
+
+
+
+/* Ticker Tape */
+:root {
+    --height: 150px;
+    --speed: 30s;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ticker-tape {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+      helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+    width: 100%;
+    overflow: hidden;
+    height: var(--height);
+    padding-left: 100%;
+  }
+  
+  .ticker-tape .ticker {
+    height: var(--height);
+    line-height: var(--height);
+    white-space: nowrap;
+    padding-right: 100%;
+    
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    -webkit-animation-duration: var(--speed);
+    
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: var(--speed);
+    
+  }
+  
+  .ticker-tape .ticker__item {
+    display: inline-block;
+    padding: 0 2rem;
+    font-size: 8rem;
+    font-weight: 900;
+    letter-spacing: 1.5rem;
+    color: rgba(0,0,0,0.2);
+  }
+  
+  @-webkit-keyframes ticker {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes ticker {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+/* End of ticker tape */
+
+
+
+
+
+@media (min-width: 40em) {
+    .split {
+        display: flex;
+        gap: 2em;
+    }

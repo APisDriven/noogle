@@ -1,49 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Noogle Team Tracker</title>
-</head>
-<body>
-    <div class="container-fluid" id="fav-tracker">
-        <!-- Conference Tracker goes here -->
-    </div>
-    <div>
-        <h1>Noogle Team Tracker</h1>
-    </div>
-    <section>
-        <h3>Today's Games</h3>
-        <div id="todays-games">
-            <!-- list of games playing today -->
-            <div class="row">
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">AwayTeam @ HomeTeam</h5>
-                      <p class="card-text">Odds from Draftkings</p>
-                      <a href="#" class="btn btn-primary">Add to Tracker</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">AwayTeam @ HomeTeam</h5>
-                      <p class="card-text">Odds from Draftkings</p>
-                      <a href="#" class="btn btn-primary">Add to Tracker</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </section>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link src="./Assets/css/style.css">
+  <title>Noogle Team Tracker</title>
+</head>
+
+<body>
+
+<!-- Ticker Tape HTML -->
+<div class="ticker-tape">
+  <div class="ticker">
+    <div class="ticker__item">THE BEST PIZZA IN TOWN</div>
+    <div class="ticker__item">THE BEST PIZZA IN TOWN</div>
+    <div class="ticker__item">THE BEST PIZZA IN TOWN</div>
+    <div class="ticker__item">THE BEST PIZZA IN TOWN</div>
+  </div>
 </div>
-   
-    <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- CREDIT TO LEWIS CAREY FOR ORIGINAL CODE INSPIRATION https://codepen.io/lewismcarey/pen/GJZVoG -->
+  <!-- End of Ticker Tape -->
+
+
+
+  <div>
+    <h1>Noogle Team Tracker</h1>
+  </div>
+  <div class="container-fluid" id="fav-tracker">
+    <!-- Team Tracker goes here -->
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+      aria-controls="offcanvasExample">
+      Show Games I'm Tracking
+    </a>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">My Tracklist</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Here are the games you're tracking:
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-bs-toggle="dropdown">
+            Edit this selection
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Remove game from My Tracklist</a></li>
+            <li><a class="dropdown-item" href="#">Remove team from My Tracklist</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <h3>Today's Games</h3>
+    <div id="todays-games">
+      <!-- list of games playing today -->
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AwayTeam @ HomeTeam</h5>
+              <p class="card-text">Odds from Draftkings</p>
+              <a href="#" class="btn btn-primary">Add to Tracker</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AwayTeam @ HomeTeam</h5>
+              <p class="card-text">Odds from Draftkings</p>
+              <a href="#" class="btn btn-primary">Add to Tracker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AwayTeam @ HomeTeam</h5>
+              <p class="card-text">Odds from Draftkings</p>
+              <a href="#" class="btn btn-primary">Add to Tracker</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AwayTeam @ HomeTeam</h5>
+              <p class="card-text">Odds from Draftkings</p>
+              <a href="#" class="btn btn-primary">Add to Tracker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AwayTeam @ HomeTeam</h5>
+              <p class="card-text">Odds from Draftkings</p>
+              <a href="#" class="btn btn-primary">Add to Tracker</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AwayTeam @ HomeTeam</h5>
+              <p class="card-text">Odds from Draftkings</p>
+              <a href="#" class="btn btn-primary">Add to Tracker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AwayTeam @ HomeTeam</h5>
+              <p class="card-text">Odds from Draftkings</p>
+              <a href="#" class="btn btn-primary">Add to Tracker</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AwayTeam @ HomeTeam</h5>
+              <p class="card-text">Odds from Draftkings</p>
+              <a href="#" class="btn btn-primary">Add to Tracker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
