@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 /* Ticker Tape */
@@ -9,7 +9,6 @@
   
   * {
       
-    background-color: rgb(167, 165, 165);
     margin: 0;
     padding: 0;
   }
@@ -22,6 +21,7 @@
     overflow: hidden;
     height: var(--height);
     padding-left: 100%;
+    background-color: black;
   }
   
   .ticker-tape .ticker {
@@ -48,7 +48,7 @@
     font-size: 8rem;
     font-weight: 900;
     letter-spacing: 1.5rem;
-    color: rgba(0,0,0,0.2);
+    color: rgb(250, 248, 248);
   }
   
   @-webkit-keyframes ticker {
@@ -77,9 +77,112 @@
 
 /* End of ticker tape */
 
+body{
+  background-image: url(https://media1.giphy.com/media/26BGIL92YmpSt38Qg/giphy.gif?cid=ecf05e47m04vigajce4apfqgyer3nl15b5l6dartj56w72al&rid=giphy.gif&ct=g);
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 1.5;
+}
+
+.card {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  background-color: black;
+  color: blanchedalmond;
+  overflow: hidden;
+}
+
+.card::before{
+  content: '';
+  position:absolute;
+  width: 1200px;
+  height: 100%;
+  background: linear-gradient(#6800b1, #f2ff1a);
+  animation: animate 4s linear infinite;
+}
+
+.card::after{
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 16px;
+  background: black;
+}
+
+@keyframes animate
+{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+h1{
+  text-align: center;
+  font-family: 'Bebas Neue';
+  font-size: 150px;
+  margin-bottom: -50px;
+  background-image: url(https://media3.giphy.com/media/YqhIK6Gbor6CLeloBq/giphy.gif?cid=ecf05e4764ganfigg28e1osvz8jd8zk9hxjsj9y4bhm16h5m&rid=giphy.gif&ct=g);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 
 
+h3{
+  text-align: center;
+  font-family: 'Bebas Neue';
+  font-size: 100px;
+}
 
+.card h5{
+  position: relative;
+  color: blanchedalmond;
+  z-index: 10;
+}
+
+.card p{
+  position: relative;
+  color: blanchedalmond;
+  z-index: 10;
+}
+
+.card a{
+  position: relative;
+  color: blanchedalmond;
+  z-index: 10;
+}
+
+.offcanvas-header{
+  background-color: black;
+}
+
+.offcanvas-title{
+  color: white;
+}
+
+.offcanvas-body{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 @media (min-width: 40em) {
     .split {
