@@ -84,6 +84,12 @@ body{
   opacity: 1.5;
 }
 
+.btn{
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 1em;
+}
+
 .card {
   margin-left: 40px;
   margin-right: 40px;
@@ -91,6 +97,7 @@ body{
   background-color: black;
   color: blanchedalmond;
   overflow: hidden;
+  text-align: center;
 }
 
 .card::before{
