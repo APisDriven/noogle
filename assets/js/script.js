@@ -1,3 +1,4 @@
+var container = document.getElementById("card-container")
 
 
 const options = {
@@ -10,21 +11,83 @@ const options = {
 
 fetch('https://odds.p.rapidapi.com/v4/sports/upcoming/odds?regions=us&oddsFormat=decimal&markets=h2h%2Cspreads&dateFormat=iso', options)
 	.then(response => response.json())
-	.then(response => console.log(response))
+	.then(data => displayGames(data))
 	.catch(err => console.error(err));
 
 
+function displayGames (games) {
+    console.log(games)
+    // for each game in the array...
+    // if an NBA game exists 
+    // create a new game card
+    for(var game of games) {
+        console.log(game.sport_title)
+        var isNBAgame = game.sport_title == "NBA"
 
-    const optionsE1 = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '8a2643924fmsh0cb566851c2d3b0p11453fjsn7b544bc19636',
-            'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+        if (isNBAgame) {
+            console.log("it's NBA")
+           
+            // create a new card
+            cardEl = document.createElement('div');
+
+            cardEl.setAttribute('id','game-card');
+            cardEl.setAttribute('class','col-sm-6');
+            
+            var card = document.createElement('div')
+            card.setAttribute('class','card')
+            cardEl.appendChild(card)
+
+            var cardBody = document.createElement('div')
+            cardBody.setAttribute('class','card-body')
+            card.appendChild(cardBody)
+
+            var teams = document.createElement('div')
+            teams.setAttribute('class','teams')
+            card.appendChild(teams)
+
+            var awayTeam = document.createElement('h5')
+            awayTeam.setAttribute('id','away-team')
+            
+            var homeTeam = document.createElement('h5')
+            homeTeam.setAttribute('id','home-team')
+            
+            
+            awayTeam.innerHTML = game.away_team
+            homeTeam.innerHTML = game.home_team
+            
+            teams.appendChild(awayTeam)
+            var at = document.createTextNode("@")
+            teams.appendChild(at)
+            teams.appendChild(homeTeam)
+
+
+            var addGameBtn = document.createElement('a')
+            addGameBtn.setAttribute('href',"#")
+            addGameBtn.setAttribute('class','btn btn-primary')
+
+            card.appendChild(addGameBtn)
+            addGameBtn.textContent = "Add to Tracklist"
+
+            container.appendChild(cardEl)
+
         }
-    };
+    }
+    // populate card with Away Team
+
+}
+
+
+
+    // const optionsE1 = {
+    //     method: 'GET',
+    //     headers: {
+    //         'X-RapidAPI-Key': '8a2643924fmsh0cb566851c2d3b0p11453fjsn7b544bc19636',
+    //         'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+    //     }
+    // };
     
-    fetch('https://api-nba-v1.p.rapidapi.com/games?live=all', optionsE1)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
+    // fetch('https://api-nba-v1.p.rapidapi.com/games?live=all', optionsE1)
+    //     .then(response => response.json())
+    //     .then(response => console.log(response))
+    //     .catch(err => console.error(err));
 
