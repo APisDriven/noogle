@@ -41,14 +41,14 @@ function displayGames (games) {
             cardBody.setAttribute('class','card-body')
             card.appendChild(cardBody)
 
-            var teams = document.createElement('div')
+            var teams = document.createElement('h5')
             teams.setAttribute('class','teams')
             card.appendChild(teams)
 
-            var awayTeam = document.createElement('h5')
+            var awayTeam = document.createElement('div')
             awayTeam.setAttribute('id','away-team')
             
-            var homeTeam = document.createElement('h5')
+            var homeTeam = document.createElement('div')
             homeTeam.setAttribute('id','home-team')
             
             
