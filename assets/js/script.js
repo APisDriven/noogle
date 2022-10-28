@@ -76,18 +76,29 @@ function displayGames (games) {
 
 }
 
+const options2 = {
+	method: 'GET',
+	headers: {
+		Authentication: 'undefined',
+		'X-RapidAPI-Key': '495246583emsh15deb529f27d5d1p14c766jsn5809976c5634',
+		'X-RapidAPI-Host': 'cocktails.p.rapidapi.com'
+	}
+};
 
+fetch('https://cocktails.p.rapidapi.com/api/v1/cocktails?name=mojito&description=made%20with%20rum&categories%5B0%5D=classic&categories%5B1%5D=old_school&rating=8&ingredients%5B0%5D=rum&ingredients%5B1%5D=whiskey&ingredients%5B2%5D=orange%20juice&iba=true&random=3', options2)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
 
-    // const optionsE1 = {
-    //     method: 'GET',
-    //     headers: {
-    //         'X-RapidAPI-Key': '8a2643924fmsh0cb566851c2d3b0p11453fjsn7b544bc19636',
-    //         'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
-    //     }
-    // };
-    
-    // fetch('https://api-nba-v1.p.rapidapi.com/games?live=all', optionsE1)
-    //     .then(response => response.json())
-    //     .then(response => console.log(response))
-    //     .catch(err => console.error(err));
+// const options2 = {
+// 	method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Key': '495246583emsh15deb529f27d5d1p14c766jsn5809976c5634',
+// 		'X-RapidAPI-Host': 'cocktails3.p.rapidapi.com'
+// 	}
+// };
 
+// fetch('https://cocktails3.p.rapidapi.com/random', options2)
+// 	.then(response => response.json())
+// 	.then(response => console.log(response))
+// 	.catch(err => console.error(err));
