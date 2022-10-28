@@ -88,7 +88,10 @@ body{
   margin-left: 300px;
   margin-right: 300px;
   margin-bottom: 1em;
+  min-width: 100px;
+  align-items: center;
 }
+
 
 .card {
   margin-left: 40px;
@@ -98,6 +101,8 @@ body{
   color: blanchedalmond;
   overflow: hidden;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .card::before{
