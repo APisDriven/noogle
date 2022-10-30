@@ -60,13 +60,15 @@ function displayGames (games) {
             teams.appendChild(at)
             teams.appendChild(homeTeam)
 
+            var buttonWrap = document.createElement('div')
+            buttonWrap.setAttribute('class', 'button-wrap')
 
             var addGameBtn = document.createElement('a')
             addGameBtn.setAttribute('href',"#")
             addGameBtn.setAttribute('class','btn btn-primary saveBtn')
+            buttonWrap.appendChild(addGameBtn)
 
-
-            card.appendChild(addGameBtn)
+            card.appendChild(buttonWrap)
             addGameBtn.textContent = "Add to Tracklist"
 
             window.container.appendChild(cardEl)
