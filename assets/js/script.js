@@ -102,6 +102,13 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function() {
+    $(document).on("click","#deleteBtn",function() {
+        localStorage.clear();
+        location.reload();
+    });
+});
+
     // const optionsE1 = {
     //     method: 'GET',
     //     headers: {
@@ -126,6 +133,9 @@ $(document).ready(function(){
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
+
+    
+
 
         
        
