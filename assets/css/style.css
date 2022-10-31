@@ -85,10 +85,9 @@ body{
 }
 
 .btn{
-  margin-left: 300px;
-  margin-right: 300px;
   margin-bottom: 1em;
-}
+  width: 30%;
+  }
 
 .card {
   margin-left: 40px;
@@ -99,6 +98,8 @@ body{
   overflow: hidden;
   text-align: center;
 }
+
+
 
 .card::before{
   content: '';
