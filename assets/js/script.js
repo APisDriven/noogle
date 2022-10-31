@@ -1,4 +1,5 @@
 var container = document.getElementById("card-container")
+var button = document.getElementById('drinkBtn')
 
 
 const options = {
@@ -79,7 +80,6 @@ function displayGames (games) {
 
 }
 
-
 $(document).ready(function(){
     $(document).on("click",".saveBtn",function() {
         var awayTeam = $(this).parent().find("#away-team").text();
@@ -114,4 +114,18 @@ $(document).ready(function(){
     //     .then(response => response.json())
     //     .then(response => console.log(response))
     //     .catch(err => console.error(err));
+    const options2 = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': '495246583emsh15deb529f27d5d1p14c766jsn5809976c5634',
+            'X-RapidAPI-Host': 'cocktails3.p.rapidapi.com'
+        }
+    };
+    
+    fetch('https://cocktails3.p.rapidapi.com/random', options2)
+        .then(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err));
 
+        
+       
