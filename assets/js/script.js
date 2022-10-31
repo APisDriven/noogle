@@ -9,6 +9,9 @@ const options = {
 	}
 };
 
+// var modal = document.getElementById("offcanvasExample");
+
+
 fetch('https://odds.p.rapidapi.com/v4/sports/upcoming/odds?regions=us&oddsFormat=decimal&markets=h2h%2Cspreads&dateFormat=iso', options)
 	.then(response => response.json())
 	.then(data => displayGames(data))
@@ -77,6 +80,13 @@ function displayGames (games) {
 
 }
 
+$(document).ready(function() {
+    $(document).on("click","#deleteBtn",function() {
+        localStorage.clear();
+        location.reload();
+    });
+});
+
 
 $(document).ready(function(){
     $(document).on("click",".saveBtn",function() {
@@ -99,6 +109,7 @@ $(document).ready(function(){
         );
     });
 });
+
 
     // const optionsE1 = {
     //     method: 'GET',
