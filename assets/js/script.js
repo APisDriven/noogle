@@ -1,4 +1,5 @@
 var container = document.getElementById("card-container")
+var button = document.getElementById('drinkBtn')
 
 
 const options = {
@@ -123,3 +124,6 @@ $(document).ready(function(){
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err));
+
+        
+       
