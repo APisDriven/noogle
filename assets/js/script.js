@@ -63,12 +63,13 @@ function displayGames (games) {
 
             var addGameBtn = document.createElement('a')
             addGameBtn.setAttribute('href',"#")
-            addGameBtn.setAttribute('class','btn btn-primary')
+            addGameBtn.setAttribute('class','btn btn-primary saveBtn')
+
 
             card.appendChild(addGameBtn)
             addGameBtn.textContent = "Add to Tracklist"
 
-            container.appendChild(cardEl)
+            window.container.appendChild(cardEl)
 
         }
     }
@@ -84,7 +85,42 @@ const options2 = {
 	}
 };
 
-fetch('https://cocktails3.p.rapidapi.com/random', options2)
+
+$(document).ready(function(){
+    $(document).on("click",".saveBtn",function() {
+        var awayTeam = $(this).parent().find("#away-team").text();
+        var homeTeam = $(this).parent().find("#home-team").text();
+        var awayText = JSON.stringify(awayTeam);
+        var homeText = JSON.stringify(homeTeam);
+        localStorage.setItem(awayText + ' @ ' + homeText, '');
+    });
+});
+
+$(document).ready(function(){
+    $(document).on("click","#show-games",function() {
+        $('#saved-games').empty();
+        var keys = Object.keys(localStorage),
+            i = keys.length;
+
+        keys.forEach(element =>
+            $('#saved-games').append('<div>' + element.replace(/\"/g, "") + '</div>')
+        );
+    });
+});
+
+    // const optionsE1 = {
+    //     method: 'GET',
+    //     headers: {
+    //         'X-RapidAPI-Key': '8a2643924fmsh0cb566851c2d3b0p11453fjsn7b544bc19636',
+    //         'X-RapidAPI-Host': 'api-nba-v1.p.rapidapi.com'
+    //     }
+    // };
+    
+    // fetch('https://api-nba-v1.p.rapidapi.com/games?live=all', optionsE1)
+    //     .then(response => response.json())
+    //     .then(response => console.log(response))
+    //     .catch(err => console.error(err));
+    fetch('https://cocktails3.p.rapidapi.com/random', options2)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
