@@ -112,3 +112,9 @@ function displayDrinks(drinks) {
   let drink = drinks.drinks[0].strDrink;
   document.getElementById("randomDrink").textContent = drink;
 }
+$(document).ready(function () {
+  $(document).on("click", "#deleteBtn", function () {
+    localStorage.clear();
+    location.reload();
+  });
+});
