@@ -76,8 +76,9 @@ function displayGames(games) {
 
 $(document).ready(function () {
   $(document).on("click", ".saveBtn", function () {
-    var awayTeam = $(this).parent().find("#away-team").text();
-    var homeTeam = $(this).parent().find("#home-team").text();
+    event.preventDefault();
+    var awayTeam = $(this).parent().siblings(".teams").children("#away-team").text();
+    var homeTeam = $(this).parent().siblings(".teams").children("#home-team").text();
     var awayText = JSON.stringify(awayTeam);
     var homeText = JSON.stringify(homeTeam);
     localStorage.setItem(awayText + " @ " + homeText, "");
