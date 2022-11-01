@@ -77,8 +77,16 @@ function displayGames(games) {
 $(document).ready(function () {
   $(document).on("click", ".saveBtn", function () {
     event.preventDefault();
-    var awayTeam = $(this).parent().siblings(".teams").children("#away-team").text();
-    var homeTeam = $(this).parent().siblings(".teams").children("#home-team").text();
+    var awayTeam = $(this)
+      .parent()
+      .siblings(".teams")
+      .children("#away-team")
+      .text();
+    var homeTeam = $(this)
+      .parent()
+      .siblings(".teams")
+      .children("#home-team")
+      .text();
     var awayText = JSON.stringify(awayTeam);
     var homeText = JSON.stringify(homeTeam);
     localStorage.setItem(awayText + " @ " + homeText, "");
@@ -119,3 +127,14 @@ $(document).ready(function () {
     location.reload();
   });
 });
+
+//console.log(tickerText);
+let ticker = document.getElementById("ticker-item");
+
+for (var key in localStorage) {
+  if (key.includes("@")) {
+    let tickerText = key.toString();
+    ticker.append(`${tickerText} || `);
+    console.log("key: ", key);
+  }
+}
