@@ -1,5 +1,6 @@
 var container = document.getElementById("card-container");
 var button = document.getElementById("drinkBtn");
+var ticker = document.getElementsByClassName("ticker")
 
 const options = {
   method: "GET",
@@ -127,6 +128,8 @@ $(document).ready(function () {
     location.reload();
   });
 });
+
+
 
 //console.log(tickerText);
 let ticker = document.getElementById("ticker-item");
