@@ -2,30 +2,43 @@
 
 <h1>Project title - Noogle</h1>
 <h2>Project description</h2>
-A website to check games that are going on in the NBA and suggest a drink to go along with it!
+A search engine for class content 
 
 <h2>Simple User story:<h2>
-As an NBA fan 
-I want to see which NBA games are happening every day
-so that I can plan to watch them accordingly
+As a coding student 
+I want to search for class topics
+so that I can quickly find the most relevant information 
 
 Wireframe or sketch of the design
 
 <h2>APIs to be used:</h2>
-Live Sports Odds API by The Odds API, The Cocktail DP API by thecocktaildb, and Bootstrap 5
+Google & YouTube
 
-<h2>Breakdown of tasks:</h2>
-John - CSS Styling of the website
+<h2>Rough breakdown of tasks:</h2>
+John - Wire Framing & YouTube API
 <br>
-Keonte - Kanban Board, Cocktail API, and Pull Request Reviews
+Keonte - Kanban Board & Test Product
 <br>
-Aaron: Project Manager, Delegated Tasks, Wrote HTML, JS for Odds API, Helped create dynamic JS for cards, created ticker and Modal screen
+Aaron: HTML Layout & Page Linking & Google API & Elevator Pitch
 <br>
-Noah - Help wih JS, Delete Button Functionality, CSS Styling on Modal
+Noah - Javascript 
 <br>
-Steve - Worked with JS Functionality and Rendering API data into the carrds
+Steve - CSS Styling
 <br>
+  <h2>Notes</h2>
+  LocalStorage  - Recent Searches
 
-<h2> Credit </h2>
-The Odds API and thecocktailp for their APIs!
+
+Tasks:
+
+Function:
+"Remove Game from Tracklist" and "Remove Team from Tracklist" button functions
+--removing GAME buttion removes the game from the Ticker class
+--removing TEAM button removes team from the array of teams to track
+
+Function:
+Ticker Scroll working
+
+Page Styling
+
 
