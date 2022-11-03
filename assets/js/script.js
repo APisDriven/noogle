@@ -74,6 +74,7 @@ function displayGames(games) {
   // populate card with Away Team
 }
 
+// save team info to local storage
 $(document).ready(function () {
   $(document).on("click", ".saveBtn", function () {
     event.preventDefault();
@@ -93,6 +94,7 @@ $(document).ready(function () {
   });
 });
 
+// display tracked teams in tracker
 $(document).ready(function () {
   $(document).on("click", "#show-games", function () {
     $("#saved-games").empty();
@@ -105,6 +107,8 @@ $(document).ready(function () {
   });
 });
 
+
+// cocktail generator
 const options2 = {
   method: "GET",
   headers: {
@@ -121,6 +125,8 @@ function displayDrinks(drinks) {
   let drink = drinks.drinks[0].strDrink;
   document.getElementById("randomDrink").textContent = drink;
 }
+
+// delete button 
 $(document).ready(function () {
   $(document).on("click", "#deleteBtn", function () {
     localStorage.clear();
@@ -128,9 +134,9 @@ $(document).ready(function () {
   });
 });
 
-//console.log(tickerText);
 let ticker = document.getElementById("ticker-item");
 
+// displays teams in ticker
 for (var key in localStorage) {
   if (key.includes("@")) {
     let tickerText = key.toString();
