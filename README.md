@@ -30,4 +30,5 @@ Steve - Worked with JS Functionality and Rendering API data into the carrds
 The Odds API and thecocktailp for their APIs!
 
 <h2> Link to site </h2>
-[https://apisdriven.github.io/noogle/](https://apisdriven.github.io/noogle/)
+
+Deployed website: [https://apisdriven.github.io/noogle/](https://apisdriven.github.io/noogle/)
