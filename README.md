@@ -8,8 +8,8 @@ A website to check games that are going on in the NBA and suggest a drink to go 
 As an NBA fan 
 I want to see which NBA games are happening every day
 so that I can plan to watch them accordingly
-
-Wireframe or sketch of the design
+  
+  (wireframe or sketch)
 
 <h2>APIs to be used:</h2>
 Live Sports Odds API by The Odds API, The Cocktail DP API by thecocktaildb, and Bootstrap 5
