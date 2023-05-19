@@ -19,7 +19,7 @@ John - CSS Styling of the website
 <br>
 Keonte - Kanban Board, Cocktail API, and Pull Request Reviews
 <br>
-Aaron: Project Manager, Delegated Tasks, Wrote HTML, JS for Odds API, Helped create dynamic JS for cards, created ticker and Modal screen
+Aaron: Project Manager & SCRM Master, Delegated Tasks, Wrote HTML, JS for Odds API, Helped create dynamic JS for cards, created ticker and Modal screen
 <br>
 Noah - Help wih JS, Delete Button Functionality, CSS Styling on Modal
 <br>
